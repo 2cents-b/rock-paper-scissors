@@ -24,12 +24,20 @@ let computerScore = 0
 function playRound(humanSelection, computerSelection) {
 
     
-    if ((humanSelection === "rock" && computerSelection === "scissors") || (humanSelection === "paper" && computerSelection === "rock") || (humanSelection === "scissors" && computerSelection === "paper")) {
+    if (
+        (humanSelection === "rock" && computerSelection === "scissors") ||
+        (humanSelection === "paper" && computerSelection === "rock")    ||
+        (humanSelection === "scissors" && computerSelection === "paper")
+    ) {
         humanScore++
         console.log("You win!")
     }
 
-    else if ((humanSelection === computerSelection) || (humanSelection === computerSelection) || (humanSelection === computerSelection)) {
+    else if (
+        (humanSelection === computerSelection) ||
+        (humanSelection === computerSelection) ||
+        (humanSelection === computerSelection)
+    ) {
         console.log("Draw!")
     }   
     else {
