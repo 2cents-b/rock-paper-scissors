@@ -12,7 +12,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let move = prompt("What's your choice? ")
+    let move = prompt("What's your choice? (rock, paper, scissors) ")
     return move.toLowerCase()
 }
 
